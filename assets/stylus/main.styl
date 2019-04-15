@@ -1,0 +1,76 @@
+@import '~normalize.css';
+@import '../css/iconfont.css';
+@import '../css/font.css';
+
+html, body
+    height 100%
+    padding 0
+    margin 0
+    background url(../../static/img/bg.png)
+    background-size 100% 100%
+ 
+h1,h2,h3,h4,p,ul
+    padding 0
+    margin 0
+    list-style none
+
+
+px2vw(px) 
+    px/1920*100 vw 
+
+px2vh(px)
+    px/1080*100 vh
+
+
+px2vm(px)
+    px/1080*100 vm
+
+.map 
+    svg 
+        width 100%
+        height px2vh(512)   
+
+.el-tree-node__content:hover 
+    background-color #384BFF
+
+.el-tree-node:focus>.el-tree-node__content 
+    background-color #384BFF
+
+
+::-webkit-scrollbar 
+    width px2vw(4)
+    height px2vh(4)   
+
+::-webkit-scrollbar-thumb //修改滚动条样式
+    display none    
+    background-color #384BFF
+    -webkit-border-radius px2vw(2)
+    -moz-border-radius px2vw(2)
+    border-radius px2vw(2)
+
+.el-table, .el-table__expanded-cell 
+    background-color transparent
+
+
+.el-table th, .el-table tr 
+    background-color transparent
+
+.el-table td,.el-table th.is-leaf 
+    border none
+.el-table,.el-table thead 
+    color #FFFFFF
+    font-size 14px
+    font-family MicrosoftYaHei
+    font-weight 400
+    overflow-x hidden
+
+.el-table td
+    padding 6px 0           
+.el-table:before
+    height 0 
+.el-table--enable-row-hover .el-table__body tr:hover>td
+    // background-color #384BFF
+    display none
+
+
+

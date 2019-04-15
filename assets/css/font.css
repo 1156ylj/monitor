@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('../fonts/font.eot') format('embedded-opentype'); /* IE6-IE8 */ 
+    src: url('../fonts/font.ttf') format('truetype'),
+        url('../fonts/font.woff2') format('woff2')/* IE9*/
+}
+
+.font {
+    font-family: 'iconfont';
+    font-style: italic;
+}
